@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC>
+
+
+
+<html lang="en">
+
+
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>Horton</title>
+
+	<!--jQuery!-->
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap! -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!--our style!-->
+	<link href='style/index.css' rel='stylesheet'>
+
+	<!--Horton!-->
+	<script src='scripts/horton.js'></script>
+
+
+</head>
+
+<body>
+
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-3'>
+				<div>
+					<img src='images/noun_5129_cc.svg' id='horton' alt='an elephant icon'></img>
+
+			</div>
+
+			</div>
+
+			<div class='col-md-9'>
+				<h1>- my name is Horton</h1>
+				<i>I know <span id='wordCount'>0</span> words and <span id='assocCount'>0</span> associations!</i><br>
+				<i>I have strengthened <span id='assocsStrengthened'>0</span> associations!</i>
+			</div>
+		</div>
+
+
+
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    I can read some prepared things...
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Some Blues Lyrics</a></li>
+				    <li><a id="shakespeare">Some Shakespeare</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+
+				<textarea id='input'></textarea>
+				<input type='text' id='format'></input>
+			</div>
+			<div class='col-md-6'>
+				<button class='btn btn-success' id='trigger'>Go!</button>
+				<div id="test"></div>
+				<textarea id='output'></textarea>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- our script!-->
+	<script src='scripts/sampleText.js'></script>
+	<script src='scripts/index.js'></script>
+</body>
+
+
+
+</html>
