@@ -31,7 +31,7 @@
 
 	<div class='container'>
 		<div class='row'>
-			<div class='col-md-3'>
+			<div class='col-xs-6 col-md-3'>
 				<div>
 					<img src='images/noun_5129_cc.svg' id='horton' alt='an elephant icon'></img>
 
@@ -40,9 +40,9 @@
 			</div>
 
 			<div class='col-md-9'>
-				<h1>- my name is Horton</h1>
+				<h1>- Hi, I'm Horton</h1>
 				<i>I know <span id='wordCount'>0</span> words and <span id='assocCount'>0</span> associations!</i><br>
-				<i>I have strengthened <span id='assocsStrengthened'>0</span> associations!</i>
+				<!-- <i>I have strengthened <span id='assocsStrengthened'>0</span> associations!</i> -->
 			</div>
 		</div>
 
@@ -50,24 +50,25 @@
 
 		<div class='row'>
 			<div class='col-md-6'>
-				<div class="dropdown">
-				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    I can read some prepared things...
-				    <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-				    <li><a href="#">Some Blues Lyrics</a></li>
-				    <li><a id="shakespeare">Some Shakespeare</a></li>
-				    <li role="separator" class="divider"></li>
-				    <li><a href="#">Separated link</a></li>
-				  </ul>
+				<div class="btn-group" role"group">
+					<button class="btn btn-success" id="readbutton">Read!</button>
+					<div class="btn-group">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					    I can read some prepared things...
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a id="shakespeare">Some Shakespeare</a></li>
+					  </ul>
+					</div>
 				</div>
+
 
 				<textarea id='input'></textarea>
 				<input type='text' id='format'></input>
 			</div>
 			<div class='col-md-6'>
-				<button class='btn btn-success' id='trigger'>Go!</button>
+				<button class='btn btn-success' id='trigger'>Write!</button>
 				<div id="test"></div>
 				<textarea id='output'></textarea>
 			</div>
