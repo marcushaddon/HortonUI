@@ -38,10 +38,6 @@ $('#trigger').on('click', function(){
 	$('#output').html(output);
 });
 
-$('#shakespeare').on('click', function(){
-	horton.read(macbeth);
-});
-
 $('.reading-list').on('click', function() {
 	var subject = $(this).attr('name');
 	$.get('/scripts/' + subject + '.json', function(res) {
