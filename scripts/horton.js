@@ -97,7 +97,6 @@ var horton = {
   },
 
   read: function(text) {
-    console.log(text);
     var sentences = text.toLocaleLowerCase().split(/[?!.:;]/g);
     for (sentence in sentences) {
       var current = sentences[sentence];

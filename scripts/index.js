@@ -1,6 +1,6 @@
 // get some things straight
 
-$('#input').html("I\'m a simple little predictive text engine. You can type or paste text into this text box, and I can read it and learn words and associations. Since I run inside the browser, I forget everything I've learned everytime the window is refreshed. This means whatever text you feed me will have big impact on the types of words I predict/poems I write/etc. You can click on me to have me read this text, to start!!!");
+$('#input').html("I\'m a simple little predictive text engine. You can type or paste text into this text box, and I can read it and learn words and associations. Since I run inside the browser, I forget everything I've learned every time the window is refreshed. This means whatever text you feed me will have big impact on the types of words I predict/poems I write/etc. You can click on me to have me read this text, to start!!!");
 
 // give horton instructions on how to cooperate
 var wordsLearned = 0;
@@ -40,4 +40,11 @@ $('#trigger').on('click', function(){
 
 $('#shakespeare').on('click', function(){
 	horton.read(macbeth);
+});
+
+$('.reading-list').on('click', function() {
+	var subject = $(this).attr('name');
+	$.get('/scripts/' + subject + '.json', function(res) {
+		horton.read(res.text);
+	});
 });
