@@ -41,6 +41,7 @@ $('#trigger').on('click', function(){
 $('.reading-list').on('click', function() {
 	var subject = $(this).attr('name');
 	$.get('scripts/' + subject + '.json', function(res) {
+		console.log(res.text);
 		horton.read(res.text);
 	});
 });
