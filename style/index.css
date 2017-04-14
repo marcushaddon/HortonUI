@@ -23,9 +23,10 @@ button.write {
   float: right;
 }
 
-.valign-wrapper {
-
-}
+/*.row {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}*/
 
 .valign {
   margin-top: 10px;

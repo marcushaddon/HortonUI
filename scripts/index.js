@@ -25,7 +25,6 @@ horton.onStrengthenAssoc = function() {
 }
 
 // hook up our UI
-alert("FUCK");
 $('#lengthChooser').on('change', function() {
 	lengthToWrite = parseInt($(this).val());
 	$("#numWords").html(lengthToWrite);
