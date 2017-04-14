@@ -7,6 +7,8 @@ var wordsLearned = 0;
 var assocsLearned = 0;
 var assocsStrengthened = 0;
 
+var lengthToWrite = 50;
+
 horton.onLearnWord = function() {
 	wordsLearned += 1;
 	$('#wordCount').html(wordsLearned);
@@ -23,6 +25,12 @@ horton.onStrengthenAssoc = function() {
 }
 
 // hook up our UI
+alert("FUCK");
+$('#lengthChooser').on('change', function() {
+	lengthToWrite = parseInt($(this).val());
+	$("#numWords").html(lengthToWrite);
+});
+
 $('#readbutton').on('click', function(){
 	var input = $('#input').val();
 	$('#format').val(input); // hacky way of getting rid of all these line breaks
@@ -34,16 +42,13 @@ $('#readbutton').on('click', function(){
 })
 
 $('#trigger').on('click', function(){
-	var output = horton.write(50);
+	var output = horton.write(lengthToWrite);
 	$('#output').html(output);
 });
 
 $('.reading-list').on('click', function() {
 	var subject = $(this).attr('name');
 	$.get('scripts/' + subject + '.json', function(res) {
-		alert("I got anything");
-		console.log(res);
-		console.log(res.text);
 		horton.read(res.text);
 	});
 });

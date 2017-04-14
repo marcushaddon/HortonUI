@@ -17,3 +17,17 @@ textarea {
 #format {
 	display: none;
 }
+
+button.write {
+  display: inline;
+  float: right;
+}
+
+.valign-wrapper {
+
+}
+
+.valign {
+  margin-top: 10px;
+  vertical-align: middle;
+}

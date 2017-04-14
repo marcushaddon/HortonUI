@@ -73,10 +73,23 @@
 				<textarea id='input'></textarea>
 				<input type='text' id='format'></input>
 			</div>
-			<div class='col-md-6'>
-				<button class='btn btn-success' id='trigger'>Write!</button>
-				<div id="test"></div>
-				<textarea id='output'></textarea>
+			<div class='col-md-6 write'>
+				<div class="row">
+					<div class="col-sm-2">
+						<button class='btn btn-success' id='trigger'>Write!</button>
+					</div>
+					<div class="col-sm-7 valign-wrappter">
+						<input id="lengthChooser" class="valign" type="range" min='10' max="500" />
+					</div>
+					<div class="col-sm-3">
+						<span id="numWords"></span> words
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<textarea id='output'></textarea>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
