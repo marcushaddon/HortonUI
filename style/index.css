@@ -1,5 +1,7 @@
 #horton {
     clip: rect(0px,350px,350px,0px);
+    height: 300px;
+    margin-bottom: -50px;
 }
 
 textarea {
