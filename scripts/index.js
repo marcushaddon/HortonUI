@@ -1,6 +1,6 @@
 // get some things straight
 
-$('#input').html("I\'m a custom Lorem Ipsum generator based on a simple little predictive text engine. You can type or paste text into this text box, and I can read it and learn words and associations. Since I run inside the browser, I forget everything I've learned every time the window is refreshed. This means whatever text you feed me will have big impact on the types of Lorem Ipsum I write. You can click on me to have me read this text, to start!!!");
+$('#input').html("I\'m a custom Lorem Ipsum generator based on a simple little predictive text engine. You can type or paste text into this text box, and I can read it and learn words and associations. Once I've learned a bit, you can press 'Write' and I will write some text based on what I've learned. Since I run inside the browser, I forget everything I've learned every time the window is refreshed. This means whatever text you feed me will have big impact on the types of Lorem Ipsum I write. Click 'Read' to have me read this text, to start, or select from some prepared sample texts above. NOTE: Any text I read will be added to what I already know, so you can experiment with different combinations of sources. If you want to reset my memory, just refresh the page.");
 
 // give horton instructions on how to cooperate
 var wordsLearned = 0;
